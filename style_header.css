@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: rgb(240, 232, 219);
+    width: 100%;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+header {
+
+    background-color: #000000;
+    height: 15%;
+    width: 100%
+
+}
+
+.cabecario{
+
+    height: 100%;
+
+}
+
+.grid-container-header{
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    height: 15vh;
+}
+
+.grid-container-header img{
+
+    width: 120px;
+    grid-column: 1/2;
+
+}
+
+.grid-container-header .cabecario{
+
+    color: #DD1F23;
+    padding: 10px;
+    size: 150px;
+    text-align: center;
+    grid-column: 2/6;
+
+}
+
+.grid-container-header ul{
+
+    font-size: 15px;
+    color: white;
+    list-style: none;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container-header li{
+
+    padding: 10px;
+}
+
+
+.grid-container-header a:visited, .grid-container-header a:link{
+
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border: 1px solid #DD1F23;
+}
+
+.grid-container-header a:hover{
+
+    text-decoration: none;
+    color: #DD1F23;
+    background-color: white;
+    padding: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .grid-container-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .grid-container-header img {
+        margin: 0 auto;
+    }
+
+    .grid-container-header .cabecario {
+        font-size: 8px;
+    }
+
+    .grid-container-header ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
